@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Event" representedClassName="Picture" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="describe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="trail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trail" inverseName="events" inverseEntity="Trail" syncable="YES"/>
+    </entity>
+    <entity name="Trail" representedClassName="Trail" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="trail" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="1510" positionY="3153" width="128" height="105"/>
+        <element name="Trail" positionX="1251" positionY="2925" width="128" height="90"/>
+    </elements>
+</model>
