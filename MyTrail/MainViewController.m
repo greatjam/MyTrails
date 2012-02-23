@@ -15,6 +15,7 @@
 @implementation MainViewController
 @synthesize controlButton;
 @synthesize eventButton;
+
 @synthesize timeLabel;
 @synthesize showTimer;
 @synthesize startDate;
